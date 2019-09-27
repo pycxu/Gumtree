@@ -1,12 +1,14 @@
 import React from 'react';
 
 import './App.css';
-import ContentPreview from './components/content-preview.component';
+import HomePage from './pages/home-page/home-page.component';
+// import ContentPreview from './components/content-preview.component';
 
 function App() {
   return (
     <div className="App">
-      <ContentPreview />
+      <HomePage />
+      {/* <ContentPreview /> */}
     </div>
   );
 }

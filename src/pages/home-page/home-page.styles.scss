@@ -1,0 +1,15 @@
+.home-page-container{
+    width: 60%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px rgba(226, 226, 226, 0.123);
+    outline: none;
+
+    .drop-down-content-wrap{
+        display: none;
+        &.collapse{
+            display: block;
+        }
+    }
+}

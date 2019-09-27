@@ -1,0 +1,25 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #dee6c4; 
+    min-height: 35px;
+
+    button{
+
+        a{
+            color: #5f7e0a;
+        }
+
+        span{
+            color: #5f7e0a;
+            padding: 0 5px;
+        }
+
+        .footer-text{
+            text-decoration: underline;
+        }
+    }
+}
