@@ -8,7 +8,7 @@ const Content = ({IpadMini, content, index}) => (
                 <img className="image" src={IpadMini} alt="mini"/>
             </div>
             <div className="content-item">
-                    {content[index].description}
+                    <p dangerouslySetInnerHTML={{__html: (content[index]? content[index].description: null)}} />
             </div>
         </div>
 )

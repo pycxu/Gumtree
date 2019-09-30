@@ -12,19 +12,19 @@ class HomePage extends React.Component {
     constructor () {
         super();
         this.state = {
-            title: Data.title,
-            content: Data.content,
+            title: '',
+            content: [],
             collapse: false,
             index: 0
         }
     }
 
-    // componentDidMount(){
-    //     this.setState({
-    //         title: Data.title,
-    //         content: Data.content
-    //     })
-    // }
+    componentDidMount(){
+        this.setState({
+            title: Data.title,
+            content: Data.content
+        })
+    }
 
     headerHandler = () => {
         this.setState({

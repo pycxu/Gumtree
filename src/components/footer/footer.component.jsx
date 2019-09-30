@@ -5,7 +5,7 @@ import './footer.styles.scss';
 const Footer = ({content, index, footerHandler}) => (
     <div className="footer-container">
         <button onClick={()=>footerHandler("prev")}>
-            <span role="img" aria-label="left">◀</span>
+            <span className="footer-img" role="img" aria-label="left">◀</span>
             <span className="footer-text">
                 {content[index - 1] ? content[index - 1].title : "Prev"}
             </span>
@@ -14,7 +14,7 @@ const Footer = ({content, index, footerHandler}) => (
             <span className="footer-text">
                 {content[index + 1] ? content[index + 1].title : "Next"}
             </span>
-            <span role="img" aria-label="right">▶</span>
+            <span className="footer-img" role="img" aria-label="right">▶</span>
         </button>
     </div>
 )
